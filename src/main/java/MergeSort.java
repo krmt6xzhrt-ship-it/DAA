@@ -9,7 +9,6 @@ public class MergeSort{
         }
         m.timeNano=System.nanoTime()-start;
     }
-
     private static void sort(int[] a,int[] temp,int left,int right,Metrics m,int depth){
         m.checkDepth(depth);
         if(right-left+1<=CUTOFF){
